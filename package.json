@@ -6,16 +6,38 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "server": "node server/index.js",
+    "dev": "concurrently \"node routes.js\" \"npx expo start --tunnel\""
   },
   "dependencies": {
-    "expo": "~51.0.2",
+    "@expo/metro-runtime": "~3.2.1",
+    "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
+    "axios": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "expo": "~51.0.8",
+    "expo-device": "~6.0.2",
+    "expo-network": "~6.0.1",
     "expo-status-bar": "~1.12.1",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-dom": "18.2.0",
+    "react-native": "0.74.1",
+    "react-native-dropdown-picker": "^5.4.6",
+    "react-native-paper": "^5.12.3",
+    "react-native-safe-area-context": "4.10.1",
+    "react-native-screens": "3.31.1",
+    "react-native-web": "~0.19.10",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@expo/ngrok": "^4.1.0"
   },
   "private": true
 }
